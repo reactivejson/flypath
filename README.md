@@ -28,6 +28,8 @@ flypath
     │   └── pathFinder.go
     ├── build
     │   └── Dockerfile
+    ├── helm
+    │   └── <helm chart files>
     ├── Makefile
     ├── README.md
     └── <source packages>
@@ -42,6 +44,10 @@ flypath is available in github
 ```shell
 go get github.com/reactivejson/flypath
 ```
+
+### Helm & K8S
+Helm charts to deploy this micro-service in a Kubernetes platform
+We generate the container image and reference it in a Helm chart
 
 #### Run
 ```shell
@@ -62,6 +68,11 @@ make test
 make docker-build
 ```
 This will build this application docker image so-called flypath
+
+### Deploy with Helm chart in a Kubernetes environment
+```bash
+ helm upgrade --namespace neo --install vwap-engine chart/vwap-engine -f your-custom-values.yml
+```
 
 ## Test coverage
 
