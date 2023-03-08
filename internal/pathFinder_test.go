@@ -1,5 +1,10 @@
 package pathFinder_test
 
+/**
+ * @author Mohamed-Aly Bou-Hanane
+ * © 2023
+ */
+
 import (
 	"testing"
 

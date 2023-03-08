@@ -1,5 +1,10 @@
 package pathFinder
 
+/**
+ * @author Mohamed-Aly Bou-Hanane
+ * © 2023
+ */
+
 // Tracker keeps track of flights and airports
 type Tracker struct {
 	flights          []Flight // slice of Flight objects

@@ -50,7 +50,11 @@ The response payload is a JSON object with a single field flight_path that is an
 Example response payload:
 
 ````json
-{"flight_path":{"source":"SFO","destination":"EWR"}}
+{"flight_path":
+  { "source":"SFO",
+    "destination":"EWR"
+  }
+}
 ````
 
 ### Project layout
