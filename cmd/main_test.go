@@ -11,6 +11,10 @@ import (
 	tracker "github.com/reactivejson/flaypath/internal"
 )
 
+/**
+ * @author Mohamed-Aly Bou-Hanane
+ * © 2023
+ */
 func TestGetFlightPath(t *testing.T) {
 	router := gin.Default()
 	router.POST("/calculate", GetFlightPath)
