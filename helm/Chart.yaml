@@ -1,0 +1,9 @@
+apiVersion: v1
+name: flypath
+version: 0.0.0-snapshot # to be replaced during jenkins build
+description: Flight Path API
+keywords:
+  - flypath
+maintainers:
+  - name: Mohamed Aly
+    email: bouhanana@outlook.fr
