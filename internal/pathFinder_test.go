@@ -11,7 +11,7 @@ import (
 func TestTrack_OneFlight(t *testing.T) {
 	fl := []pathFinder.Flight{{Source: "SFO", Destination: "LAX"}}
 
-	tr := pathFinder.New(fl)
+	tr := pathFinder.NewTracker(fl)
 
 	assert.Equal(t, fl[0], tr.PathFinder())
 }
@@ -22,7 +22,7 @@ func TestTrack_MultipleFlights(t *testing.T) {
 		{Source: "LAX", Destination: "JFK"},
 	}
 
-	tr := pathFinder.New(fl)
+	tr := pathFinder.NewTracker(fl)
 
 	f := pathFinder.Flight{Source: "SFO", Destination: "JFK"}
 	assert.Equal(t, f, tr.PathFinder())

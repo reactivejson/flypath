@@ -15,9 +15,9 @@ func GetFlightPath(c *gin.Context) {
 	}
 
 	// Find the starting and ending airports
-	tracked := pathFinder.New(flights).PathFinder()
+	path := pathFinder.NewTracker(flights).PathFinder()
 
-	c.JSON(http.StatusOK, gin.H{"flight_path": tracked})
+	c.JSON(http.StatusOK, gin.H{"flight_path": path})
 }
 
 func main() {
